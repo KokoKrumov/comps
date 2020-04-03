@@ -1,0 +1,27 @@
+<app-divider>
+  Table Component!
+</app-divider>
+<app-table classNames="striped called" [data]="data" [headers]="headers"></app-table>
+
+
+<app-divider>
+  Tablular Component!
+</app-divider>
+<app-tabs>
+  <a class="item"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{exact: true}"
+     routerLink="./">
+    Bio
+  </a>
+  <a class="item"
+     routerLinkActive="active"
+     routerLink="./companies">
+    Pics
+  </a>
+  <a class="item"
+     routerLinkActive="active"
+     routerLink="./partners">
+    Companies
+  </a>
+</app-tabs>
