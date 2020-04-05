@@ -1,0 +1,29 @@
+<app-divider>
+  Modal Component!
+</app-divider>
+<div>
+  <button (click)="toggleModal()">Show Modal!</button>
+</div>
+<app-modal (close)="toggleModal()" *ngIf="modalOpen">
+  <div header>
+    Profile Picture
+  </div>
+  <div image>
+    <img src="https://semantic-ui.com/images/avatar2/large/rachel.png">
+  </div>
+  <div description>
+    <div class="ui header">We've auto-chosen a profile image for you.</div>
+    <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image
+      associated with your registered e-mail address.</p>
+    <p>Is it okay to use this photo?</p>
+  </div>
+  <ng-container button>
+    <button (click)="toggleModal()" class="ui black deny button" > close the fukin modal!!!</button>
+  </ng-container>
+</app-modal>
+
+
+<app-divider>
+  Accordion Component!
+</app-divider>
+<app-accordion [items]="data"></app-accordion>
